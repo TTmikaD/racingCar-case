@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start .road-bg */
+.road-bg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.road-bg img {
+    width: 1280px !important;
+    height: 600px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* end .road-bg */
+/* start road */
+.road {
+    display: flex;
+    justify-content: center;
+}
+
+.road img {
+    width: 40% !important;
+    height: 600px !important;
+    position: absolute;
+    top: 20px;
+}
+
+/* end road */
+/* start interface car */
+
+.carUser img {
+    width: 200px !important;
+    height: 100px !important;
+    border:  red 1px solid !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    transform: rotate(-90deg);
+    position: absolute !important;
+    bottom: 50px !important;
+    left: 40vw !important;
+}
+
+.carBot-1 img {
+    width: 160px !important;
+    height: 260px !important;
+    border:  red 1px solid !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    transform: rotate(180deg);
+    position: absolute !important;
+    top: 0px !important;
+    left: 30vw;
+}
+
+.carBot-2 img {
+    width: 160px !important;
+    height: 260px !important;
+    border:  red 1px solid !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: absolute !important;
+    top: 0px !important;
+    left: 30vw;
+}
+
+.carBot-3 img {
+    width: 120px !important;
+    height: 260px !important;
+    border:  red 1px solid !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: absolute !important;
+    top: 0px !important;
+    left: 60vw;
+}
+/* end interface car */
