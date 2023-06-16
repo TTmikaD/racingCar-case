@@ -2,93 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
 }
 
-/* start .road-bg */
-.road-bg {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+body {
     position: relative;
 }
 
-.road-bg img {
-    width: 1280px !important;
-    height: 600px !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-}
-
-/* end .road-bg */
-/* start road */
-.road {
+#bg-road {
     display: flex;
     justify-content: center;
 }
 
-.road img {
-    width: 40% !important;
-    height: 600px !important;
+#bg-road img {
+    width: 400px;
+    height: auto;
+    position: relative;
+}
+
+#controlUser-car img {
+    width: 60px;
+    height: auto;
     position: absolute;
-    top: 20px;
+    bottom: 0;
+    left: 42vw;
+    background-color: transparent;
 }
 
-/* end road */
-/* start interface car */
-
-.carUser img {
-    width: 200px !important;
-    height: 100px !important;
-    border:  red 1px solid !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    transform: rotate(-90deg);
-    position: absolute !important;
-    bottom: 50px !important;
-    left: 40vw !important;
+#obstacle-car1 img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 42vw;
+    background-color: transparent;
 }
 
-.carBot-1 img {
-    width: 160px !important;
-    height: 260px !important;
-    border:  red 1px solid !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    transform: rotate(180deg);
-    position: absolute !important;
-    top: 0px !important;
-    left: 30vw;
+#obstacle-car2 img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 42vw;
+    background-color: transparent;
 }
 
-.carBot-2 img {
-    width: 160px !important;
-    height: 260px !important;
-    border:  red 1px solid !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    position: absolute !important;
-    top: 0px !important;
-    left: 30vw;
+.result {
+    width: 100px;
+    height: 50px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 20vw;
 }
 
-.carBot-3 img {
-    width: 120px !important;
-    height: 260px !important;
-    border:  red 1px solid !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    position: absolute !important;
-    top: 0px !important;
-    left: 60vw;
+.startGame {
+    position: absolute;
+    top: 70vh;
+    left: 25%;
 }
-/* end interface car */

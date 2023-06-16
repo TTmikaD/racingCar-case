@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="game" width="800" height="600" style="border: 3px solid #000000"></canvas>
+    <canvas id="caroCanvas" width="800" height="600" style="border: 3px solid #000000"></canvas>
+
+    <script>
+        let gameContext = document.getElementById("game").getContext("2d");
+        gameContext.beginPath();
+        gameContext.fillStyle = '#fa4b2a';
+        gameContext.fillRect(20, 20, 150, 100);
+        function moveCarUp() {
+            gameContext.clearRect(20, carYPosition, 150, 100);
+
+            if (carYPosition > 0) {
+                carYPosition--;
+            }
+
+            drawCar();
+        }
+
+        function moveCarDown() {
+            gameContext.clearRect(20, carYPosition, 150, 100);
+
+            if (carYPosition + 100 < 600) {
+                carYPosition++;
+            }
+
+            drawCar();
+        }
+
+        // drawCaroCanvas
+        let caroCanvas = document.getElementById('caroCanvas');
+        let caroCtx = caroCanvas.getContext('2d');
+
+        for (let i = 0; i < caroCanvas.width; i += 20) {
+            caroCtx.moveTo(0, i)
+            caroCtx.lineTo(caroCanvas.width, i)
+            caroCtx.stroke();
+        }
+        for (let i = 0; i < caroCanvas.height; i += 20) {
+            caroCtx.moveTo(i, 0)
+            caroCtx.lineTo(i, caroCanvas.height)
+            caroCtx.stroke();
+        }
+
+        function myTimer() {
+            const date = new Date()
+            document.getElementById('demo').innerHTML = date.toLocaleDateString()
+        }
+    </script>
+</body>
+
+</html>
