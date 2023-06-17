@@ -5,39 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <nav>
+<canvas id="canvas" width="800" height="1000"
+        style="border: 1px solid gray; margin-top: 0;margin-left: 0;background-color: wheat;"></canvas>
 
-        <div id="bg-road">
-            <img src="./road_0.png" alt="">
-        </div>
-        <div id="line-road"></div>
-        <div id="controlUser-car">
-            <img id="imgCar-user" src="./carControl.png" alt="">
-        </div>
-        <div id="obstacle-car1">
-            <img id="imgCar-obstacle" src="./car2.png" alt="">
-        </div>
-        <div id="obstacle-car2">
-            <img id="imgCar-obstacle" src="./car3.png" alt="">
-        </div>
-        <div class="result"></div>
-        <div class="startGame">
-            <button type="text" class="bg-light">startGame</button>
-        </div>
-    </nav>
-
-
-    <!-- đây là linking của bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+<script src="js/const.js"></script>
+<script src="js/Car.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
