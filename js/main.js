@@ -1,3 +1,4 @@
+// phần này là của chị Phương Anh làm
 const myCar = new Car(300, 500, 50, 100, "img/carbot1.png", canvas)
 myCar.onload = () => {
     myCar.drawCar();
@@ -12,6 +13,7 @@ function carPlayer() {
 
 carPlayer();
 
+// phần này là của MK làm
 //vé xe tự chuyển động số 1 
 const carEnemy1 = new Car(100, 200, 50, 100, "img/carbot2.png", canvas)
 carEnemy1.onload = () => {
