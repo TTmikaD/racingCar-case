@@ -29,7 +29,13 @@ class Car {
         if (this.y > 0)
             this.y += speed;
     }
+    
+    moveUp(speed) {
+        if (this.y > 0)
+            this.y -= speed;
+    }
 }
+
 
 function move(evt) {
     switch (evt.key) {
@@ -38,6 +44,12 @@ function move(evt) {
             break;
         case 'ArrowLeft':
             myCar.moveLeft(50);
+            break;
+        case 'ArrowDown':
+            myCar.moveDown(50);
+            break;
+        case 'ArrowUp':
+            myCar.moveUp(50);
             break;
     }
 }
