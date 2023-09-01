@@ -29,10 +29,16 @@ class Car {
         if (this.y > 0)
             this.y += speed;
     }
-    
+
     moveUp(speed) {
         if (this.y > 0)
             this.y -= speed;
+    }
+
+    animationCar() {
+        for (var i = 0; i < this.x; i++) {
+            
+        }
     }
 }
 
@@ -55,3 +61,4 @@ function move(evt) {
 }
 
 window.addEventListener("keydown", move);
+

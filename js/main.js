@@ -16,21 +16,18 @@ carPlayer();
 // phần này là của MK làm
 //vé xe tự chuyển động số 1 
 
-let carEnemy1PositionX = 50;
-let carEnemy1PositionY = 200;
 
-const carEnemy1 = new Car(carEnemy1PositionX, carEnemy1PositionY, 50, 100, "img/carbot2.png", canvas)
+const carEnemy1 = new Car(100, 200, 50, 100, "img/carbot2.png", canvas)
 carEnemy1.onload = () => {
     carEnemy1.drawCar();
+
 }
 
 function yourCar1() {
     carEnemy1.drawCar();
     requestAnimationFrame(yourCar1);
-    carEnemy1PositionY += 1;
 }
-
-setInterval(yourCar1, 10);
+yourCar1();
 
 //vé xe tự chuyển động số 2
 const carEnemy2 = new Car(300, 200, 50, 100, "img/carbot4.png", canvas)
